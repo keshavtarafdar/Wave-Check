@@ -15,27 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cwf-zc-xqb">
-                                <rect key="frame" x="39" y="100" width="322" height="324"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="celltower" translatesAutoresizingMaskIntoConstraints="NO" id="jU6-rK-VUG">
-                                        <rect key="frame" x="0.0" y="0.0" width="322" height="324"/>
-                                    </imageView>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="VUl-hL-bTK">
-                                <rect key="frame" x="58" y="416" width="285.66666666666669" height="60"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wave Check" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXN-Ra-0Ve">
-                                        <rect key="frame" x="0.0" y="0.0" width="285.66666666666669" height="60"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="IXX-yi-BoC">
-                                <rect key="frame" x="50" y="525" width="290" height="135"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="IXX-yi-BoC">
+                                <rect key="frame" x="50" y="589" width="290" height="135"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pYk-QY-Xi7">
                                         <rect key="frame" x="0.0" y="0.0" width="290" height="50"/>
@@ -61,11 +42,31 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="center" ambiguous="YES" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pv4-RY-6v6">
+                                <rect key="frame" x="34" y="76" width="322" height="450"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="celltower" translatesAutoresizingMaskIntoConstraints="NO" id="zcd-Gl-AMt">
+                                        <rect key="frame" x="0.0" y="0.0" width="322" height="380"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Wave Check" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Skn-Af-bm8">
+                                        <rect key="frame" x="18.333333333333343" y="390" width="285.66666666666663" height="60"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="475" id="Q59-sc-j3h"/>
+                                    <constraint firstAttribute="height" constant="450" id="ftq-6u-AdG"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.098039215686274508" green="0.086274509803921567" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="IXX-yi-BoC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7gq-iA-3Mz"/>
                             <constraint firstItem="IXX-yi-BoC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="VF8-Jz-HMQ"/>
+                            <constraint firstItem="pv4-RY-6v6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fQA-Y2-ZR8"/>
                             <constraint firstItem="IXX-yi-BoC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="onI-rR-rLy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IXX-yi-BoC" secondAttribute="bottom" constant="150" id="wUH-kA-KjI"/>
                         </constraints>
