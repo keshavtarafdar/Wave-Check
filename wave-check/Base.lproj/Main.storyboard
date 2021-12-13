@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,60 +15,66 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="IXX-yi-BoC">
-                                <rect key="frame" x="50" y="589" width="290" height="135"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="103" translatesAutoresizingMaskIntoConstraints="NO" id="cpz-xM-28o">
+                                <rect key="frame" x="34" y="83" width="322" height="688"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pYk-QY-Xi7">
-                                        <rect key="frame" x="0.0" y="0.0" width="290" height="50"/>
-                                        <color key="backgroundColor" red="0.12729889150000001" green="0.38892367480000001" blue="0.56007403140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <stackView opaque="NO" contentMode="center" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pv4-RY-6v6">
+                                        <rect key="frame" x="0.0" y="0.0" width="322" height="450"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="celltower" translatesAutoresizingMaskIntoConstraints="NO" id="zcd-Gl-AMt">
+                                                <rect key="frame" x="0.0" y="0.0" width="322" height="380"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Wave Check" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Skn-Af-bm8">
+                                                <rect key="frame" x="18.333333333333343" y="390" width="285.66666666666663" height="60"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="ps3-tc-420"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="475" id="Q59-sc-j3h"/>
+                                            <constraint firstAttribute="height" constant="450" id="ftq-6u-AdG"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
-                                        <state key="normal" title="View Map">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DHk-9g-hxi">
-                                        <rect key="frame" x="0.0" y="85" width="290" height="50"/>
-                                        <color key="backgroundColor" red="0.12729889150000001" green="0.38892367480000001" blue="0.56007403140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="nOk-eO-lvL"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
-                                        <state key="normal" title="Contribute Data">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="IXX-yi-BoC">
+                                        <rect key="frame" x="0.0" y="553" width="322" height="135"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pYk-QY-Xi7">
+                                                <rect key="frame" x="0.0" y="0.0" width="322" height="50"/>
+                                                <color key="backgroundColor" red="0.12729889150000001" green="0.38892367480000001" blue="0.56007403140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="ps3-tc-420"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                                <state key="normal" title="View Map">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DHk-9g-hxi">
+                                                <rect key="frame" x="0.0" y="85" width="322" height="50"/>
+                                                <color key="backgroundColor" red="0.12729889150000001" green="0.38892367480000001" blue="0.56007403140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="nOk-eO-lvL"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                                <state key="normal" title="Contribute Data">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="center" ambiguous="YES" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pv4-RY-6v6">
-                                <rect key="frame" x="34" y="76" width="322" height="450"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="celltower" translatesAutoresizingMaskIntoConstraints="NO" id="zcd-Gl-AMt">
-                                        <rect key="frame" x="0.0" y="0.0" width="322" height="380"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Wave Check" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Skn-Af-bm8">
-                                        <rect key="frame" x="18.333333333333343" y="390" width="285.66666666666663" height="60"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="475" id="Q59-sc-j3h"/>
-                                    <constraint firstAttribute="height" constant="450" id="ftq-6u-AdG"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.098039215686274508" green="0.086274509803921567" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="IXX-yi-BoC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7gq-iA-3Mz"/>
-                            <constraint firstItem="IXX-yi-BoC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="VF8-Jz-HMQ"/>
-                            <constraint firstItem="pv4-RY-6v6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fQA-Y2-ZR8"/>
-                            <constraint firstItem="IXX-yi-BoC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="onI-rR-rLy"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IXX-yi-BoC" secondAttribute="bottom" constant="150" id="wUH-kA-KjI"/>
+                            <constraint firstItem="cpz-xM-28o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N8A-rV-vI2"/>
+                            <constraint firstItem="cpz-xM-28o" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bjT-pL-d3v"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cpz-xM-28o" secondAttribute="bottom" constant="39" id="hak-ah-M27"/>
+                            <constraint firstItem="cpz-xM-28o" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="j0m-qh-69a"/>
+                            <constraint firstItem="cpz-xM-28o" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="vKr-4U-Fym"/>
+                            <constraint firstItem="cpz-xM-28o" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="39" id="vq8-BM-9uV"/>
                         </constraints>
                     </view>
                 </viewController>
