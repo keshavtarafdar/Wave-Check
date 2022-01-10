@@ -24,6 +24,8 @@ class ViewController: UIViewController {
         contributeDataButton.layer.cornerRadius = 22
         
     }
+    
+    //edit for kush
 
 
 }
