@@ -77,6 +77,10 @@
                             <constraint firstItem="cpz-xM-28o" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="39" id="vq8-BM-9uV"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="contributeDataButton" destination="DHk-9g-hxi" id="NFk-gb-Go5"/>
+                        <outlet property="viewMapButton" destination="pYk-QY-Xi7" id="MZc-FE-qrT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
