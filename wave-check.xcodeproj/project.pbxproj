@@ -14,6 +14,7 @@
 		092380752766E448009CACE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 092380742766E448009CACE3 /* Assets.xcassets */; };
 		092380782766E448009CACE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 092380762766E448009CACE3 /* LaunchScreen.storyboard */; };
 		09301B4327A8E15100156165 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09301B4227A8E15100156165 /* SettingsViewController.swift */; };
+		09301B4827A99E8100156165 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09301B4727A99E8100156165 /* MapKit.framework */; };
 		094C0C432798A25900BCD701 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 094C0C422798A25900BCD701 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		092380772766E448009CACE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		092380792766E448009CACE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09301B4227A8E15100156165 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		09301B4727A99E8100156165 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		094C0C422798A25900BCD701 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -35,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09301B4827A99E8100156165 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +49,7 @@
 			children = (
 				0923806A2766E442009CACE3 /* wave-check */,
 				092380692766E442009CACE3 /* Products */,
+				09301B4627A99E8100156165 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +75,14 @@
 				092380792766E448009CACE3 /* Info.plist */,
 			);
 			path = "wave-check";
+			sourceTree = "<group>";
+		};
+		09301B4627A99E8100156165 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09301B4727A99E8100156165 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

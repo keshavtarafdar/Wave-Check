@@ -108,12 +108,22 @@
                                     <segue destination="lI7-Fh-Kai" kind="show" id="hNk-Gl-ALP"/>
                                 </connections>
                             </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="CUL-dm-JlP">
+                                <rect key="frame" x="0.0" y="88" width="390" height="722"/>
+                            </mapView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Qxe-bQ-xyK"/>
                         <color key="backgroundColor" red="0.1257576644" green="0.118007116" blue="0.15587395430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CUL-dm-JlP" firstAttribute="centerY" secondItem="Qxe-bQ-xyK" secondAttribute="centerY" id="1CK-Sf-UxO"/>
+                            <constraint firstItem="CUL-dm-JlP" firstAttribute="centerX" secondItem="Qxe-bQ-xyK" secondAttribute="centerX" id="Iy4-qe-ofR"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title=" " id="e0Z-kz-7uq"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="mapView" destination="CUL-dm-JlP" id="pNl-2A-K27"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AZQ-wP-Jwp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -126,6 +136,23 @@
                     <view key="view" contentMode="scaleToFill" id="uIE-BL-87Z">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sS4-I9-gUD">
+                                <rect key="frame" x="0.0" y="88" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" preferredStyle="sliding" translatesAutoresizingMaskIntoConstraints="NO" id="KHM-y4-cok">
+                                <rect key="frame" x="16" y="127" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dark Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpO-Ij-c0r">
+                                <rect key="frame" x="19" y="166" width="84" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ER0-jc-Mzi"/>
                         <color key="backgroundColor" red="0.12300804999999999" green="0.1210731342" blue="0.1558005214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -133,7 +160,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pvO-JB-QT8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2782" y="375"/>
+            <point key="canvasLocation" x="2781.5384615384614" y="374.64454976303318"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ey4-uc-daO">
