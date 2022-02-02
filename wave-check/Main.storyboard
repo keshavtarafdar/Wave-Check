@@ -136,7 +136,7 @@
             </objects>
             <point key="canvasLocation" x="1884.6153846153845" y="374.64454976303318"/>
         </scene>
-        <!--Settings-->
+        <!--Settings Poop-->
         <scene sceneID="WEl-nP-Lvt">
             <objects>
                 <viewController id="lI7-Fh-Kai" sceneMemberID="viewController">
@@ -182,7 +182,7 @@
                         <viewLayoutGuide key="safeArea" id="ER0-jc-Mzi"/>
                         <color key="backgroundColor" red="0.12300804999999999" green="0.1210731342" blue="0.1558005214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Settings" largeTitleDisplayMode="always" id="QVH-wN-Crz">
+                    <navigationItem key="navigationItem" title="Settings Poop" largeTitleDisplayMode="always" id="QVH-wN-Crz">
                         <barButtonItem key="backBarButtonItem" title=" " id="fNL-yM-0HW"/>
                     </navigationItem>
                 </viewController>
