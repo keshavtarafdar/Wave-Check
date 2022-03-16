@@ -85,5 +85,9 @@
 	<string>we will make u poop at this location</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>Can we have ur location brother</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>i need ur mf location bro</string>
+	<key>NSLocationUsageDescription</key>
+	<string>FBI Open up</string>
 </dict>
 </plist>

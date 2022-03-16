@@ -12,20 +12,36 @@ import CoreLocation
 class MapViewController: UIViewController, CLLocationManagerDelegate {
     
     @IBOutlet var mapView: MKMapView!
+    let manager = CLLocationManager()
     
-    let locationManager = CLLocationManager()
+    @IBAction func button_clicked(_ sender: Any) {
+        retrieveCurrentLocation()
+    }
+    
+    func retrieveCurrentLocation() {
+        
+        switch manager.authorizationStatus {
+        case .restricted, .denied:
+            manager.requestWhenInUseAuthorization()
+        default:
+            return
+            
+        }
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        locationManager.requestWhenInUseAuthorization()
+        manager.requestWhenInUseAuthorization()
 
         if CLLocationManager.locationServicesEnabled() {
-            locationManager.delegate = self
-            locationManager.desiredAccuracy = kCLLocationAccuracyBest
-            locationManager.startUpdatingLocation()
+            manager.delegate = self
+            manager.desiredAccuracy = kCLLocationAccuracyBest
+            manager.startUpdatingLocation()
         }
         mapView.showsUserLocation = true
     }
+    
     
 
     /*
